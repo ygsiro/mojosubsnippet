@@ -16,5 +16,14 @@
         "path": "./snippets/mojo.json"
       }
     ]
+  },
+  "icon": "images/mojo.png",
+  "bugs": {
+    "url": "https://github.com/ygsiro/mojosubsnippet/issues",
+    "email": "entoyukari@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ygsiro/mojosubsnippet.git"
   }
 }
