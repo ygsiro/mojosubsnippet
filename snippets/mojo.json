@@ -1,0 +1,90 @@
+{
+    "function": {
+        "prefix": "fn",
+        "body": [
+            "fn ${1:func_name}($2)${3: -> ${4:Int}}:",
+            "    $0"
+        ],
+        "description": "Mojo function"
+    },
+    "function void": {
+        "prefix": "fn:void",
+        "body": [
+            "fn ${1:func_name}($2):",
+            "    $0"
+        ],
+        "description": "If the return value is not required"
+    },
+    "main": {
+        "prefix": "fn:main",
+        "body": [
+            "fn main():",
+            "    ${0:pass}"
+        ]
+    },
+    "def function": {
+        "prefix": "def",
+        "body": [
+            "def ${1:func_name}($2):",
+            "    $0"
+        ]
+    },
+    "for range": {
+        "prefix": "forrange",
+        "body": [
+            "for ${1:i} in range($2):",
+            "    $0"
+        ]
+    },
+    "struct": {
+        "prefix": "struct",
+        "body": [
+            "struct ${1:name}:",
+            "    fn __init__(inout self${2:, first:${3: type}}):",
+            "        $0"
+        ]
+    },
+    "class __copyinit__": {
+        "prefix": [
+            "fn:copy",
+            "__copyinit__"
+        ],
+        "body": [
+            "fn __copyinit__(inout self, existing: Self):",
+            "    $0"
+        ],
+        "description": "copy constructor"
+    },
+    "class __moveinit__": {
+        "prefix": [
+            "fn:move",
+            "__moveinit__"
+        ],
+        "body": [
+            "fn __moveinit__(inout self, owned existing: Self):",
+            "    $0"
+        ],
+        "description": "move constructor"
+    },
+    "class __del__": {
+        "prefix": [
+            "fn:del",
+            "__del__"
+        ],
+        "body": [
+            "fn __del__(owned self):",
+            "    $0"
+        ],
+        "description": "destructor"
+    },
+    "class __add__": {
+        "prefix": [
+            "fn:add",
+            "__add__"
+        ],
+        "body": [
+            "fn __add__(self, $1):",
+            "    $0"
+        ]
+    }
+}
