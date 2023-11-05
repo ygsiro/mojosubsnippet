@@ -2,7 +2,8 @@
   "name": "mojosubsnippet",
   "displayName": "MojoSubSnippet",
   "description": "Mojo snippets",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "publisher": "ygsiro",
   "engines": {
     "vscode": "^1.84.0"
   },
@@ -18,6 +19,7 @@
     ]
   },
   "icon": "images/mojo.png",
+  "license": "MIT LICENSE",
   "bugs": {
     "url": "https://github.com/ygsiro/mojosubsnippet/issues",
     "email": "entoyukari@gmail.com"
